@@ -37,8 +37,7 @@
     @yield('content')
   </div>
   <footer>
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
+    <script src="{{ elixir('js/all.js') }}"></script>
   </footer>
 </body>
 </html>
