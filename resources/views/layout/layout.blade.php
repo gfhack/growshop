@@ -19,13 +19,17 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Principal</a></li>
+          <li class="active">
+            <a href="/"><i class="fa fa-home fa-1x" aria-hidden="true"></i> Inicial</a>
+          </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-gift fa-1x" aria-hidden="true"></i> Produtos <span class="caret"></span>
+            </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Listar</a></li>
+              <li><a href="#"><i class="fa fa-list fa-1x" aria-hidden="true"></i> Listar</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Cadastrar</a></li>
+              <li><a href="#"><i class="fa fa-save fa-1x" aria-hidden="true"></i> Cadastrar</a></li>
             </ul>
           </li>
         </ul>
