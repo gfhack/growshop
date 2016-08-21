@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Grow Shop</title>
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
 </head>
 <body>
 
