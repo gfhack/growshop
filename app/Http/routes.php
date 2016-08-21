@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('produtos', 'ProductsController@index');
+Route::get('banco', 'ProductsController@conect');
+
+Route::get('cadastro', 'ProductsController@create');
+Route::post('cadastro', 'ProductsController@store');
