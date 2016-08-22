@@ -18,6 +18,7 @@
       <td>R$ {{ $p->price }}</td>
       <td> {{ $p->image }}</td>
       <td>
+        <a href="edit/{{ $p->id }}" class="btn btn-success"><i class="fa fa-pencil fa-1x"></i></a>
       </td>
       <td>
         <form method="POST" action="destroy/{{ $p->id }}">

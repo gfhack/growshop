@@ -13,6 +13,19 @@ class ProductsController extends Controller {
     return view('products.index', compact('ps'));
   }
 
+  public function edit($id) {
+    $p = Product::find($id);
+
+    return view('products.edit', compact('p'));
+  }
+
+  public function update($id, Request $req) {
+    $p = Product::find($id);
+    $p->update($req->all());
+
+    return redirect()->action('ProductsController@report');
+  }
+
   public function create() {
     return view('products.create');
   }
