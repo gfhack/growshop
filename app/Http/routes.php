@@ -4,6 +4,7 @@ Route::get('/', 'HomeController@index'); // home page
 Route::auth();
 
 Route::get('products', 'ProductsController@index');
+Route::get('search', 'ProductsController@search');
 
 Route::group(['middleware' => 'auth'], function () { // require login
   Route::get('create', 'ProductsController@create');

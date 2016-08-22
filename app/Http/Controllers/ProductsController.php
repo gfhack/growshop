@@ -13,6 +13,11 @@ class ProductsController extends Controller {
     return view('products.index', compact('ps'));
   }
 
+  public function search(Request $req) {
+    $ps = DB::table('products')->where('name', 'LIKE', '%'.$req->param.'%')->get();
+    return $ps;
+  }
+
   public function edit($id) {
     $p = Product::find($id);
 

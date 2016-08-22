@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
 </head>
 <body>
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -50,10 +49,13 @@
   </nav>
 
   <div class="container">
-    @yield('content')
+    <div class="row">
+      @yield('content')
+    </div>
   </div>
   <footer>
     <script src="{{ elixir('js/all.js') }}"></script>
+    @yield('script')
   </footer>
 </body>
 </html>
