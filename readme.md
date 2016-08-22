@@ -5,6 +5,18 @@
 
 Laravel is a web application framework with expressive, elegant syntax.
 
+## Todo List
+- Framework [finished]
+- CRUD Product [finishing]
+- Export report to PDF [unfinished]
+- User Auth [finished]
+- Validations [unfinished]
+- Asynchronous search [finished]
+- PostgreSQL [finished]
+
+- TDD [unfinished]
+- Boostrap [finished]
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
