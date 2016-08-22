@@ -27,11 +27,20 @@
               <i class="fa fa-gift fa-1x" aria-hidden="true"></i> Produtos <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#"><i class="fa fa-list fa-1x" aria-hidden="true"></i> Listar</a></li>
+              <li><a href="products"><i class="fa fa-list fa-1x" aria-hidden="true"></i> Listar</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#"><i class="fa fa-save fa-1x" aria-hidden="true"></i> Cadastrar</a></li>
+              <li><a href="create"><i class="fa fa-save fa-1x" aria-hidden="true"></i> Cadastrar</a></li>
             </ul>
           </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+        @if(Auth::check())
+            <li><a href="#"><i class="fa fa-user"></i> {{ Auth::user()->name }}</a></li>
+            <li><a href="logout">Sair</a></li>
+        @else
+          <li><a href="register"><i class="fa fa-user"></i> Cadastro</a></li>
+        @endif
         </ul>
       </div>
     </div>

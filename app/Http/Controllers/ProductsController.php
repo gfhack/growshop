@@ -10,4 +10,12 @@ class ProductsController extends Controller {
   public function index() {
     return view('products.index');
   }
+
+  public function create() {
+    return view('products.create');
+  }
+
+  public function store(Request $req) {
+    //TODO
+  }
 }

@@ -1,22 +1,11 @@
 <?php
+Route::get('/', 'HomeController@index'); // home page
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+Route::auth();
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('products', 'ProductsController@index');
+
+Route::group(['middleware' => 'auth'], function () { // require login
+  Route::get('create', 'ProductsController@create');
+  Route::post('create', 'ProductsController@store');
 });
-
-Route::get('produtos', 'ProductsController@index');
-Route::get('banco', 'ProductsController@conect');
-
-Route::get('cadastro', 'ProductsController@create');
-Route::post('cadastro', 'ProductsController@store');

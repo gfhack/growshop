@@ -1,7 +1,8 @@
-@extends('layout/layout')
+@extends('layout.layout')
 
 @section('content')
+<div class="row">
   <h1>Grow Shop</h1>
-
-  <img src="/img/bottini.jpg" />
-@stop
+  <hr>
+</div>
+@endsection
