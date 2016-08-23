@@ -13,6 +13,12 @@ class ProductsController extends Controller {
     return view('products.index', compact('ps'));
   }
 
+  public function pdf() {
+    $ps = DB::table('products')->get();
+    $pdf = \PDF::loadView('products.pdf', compact('ps'));
+    return $pdf->stream();
+  }
+
   public function search(Request $req) {
     $ps = DB::table('products')->where('name', 'LIKE', '%'.$req->param.'%')->get();
     return $ps;

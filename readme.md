@@ -13,7 +13,6 @@ Laravel is a web application framework with expressive, elegant syntax.
 - Validations [unfinished]
 - Asynchronous search [finished]
 - PostgreSQL [finished]
-
 - TDD [unfinished]
 - Boostrap [finished]
 

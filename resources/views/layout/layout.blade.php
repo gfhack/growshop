@@ -42,6 +42,7 @@
           <li><a href="logout">Sair</a></li>
           @else
           <li><a href="register"><i class="fa fa-user"></i> Cadastro</a></li>
+          <li><a href="login">Login</a></li>
           @endif
         </ul>
       </div>

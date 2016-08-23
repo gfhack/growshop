@@ -13,4 +13,6 @@ Route::group(['middleware' => 'auth'], function () { // require login
   Route::post('destroy/{id}', 'ProductsController@destroy');
   Route::get('edit/{id}', 'ProductsController@edit');
   Route::post('edit/{id}', 'ProductsController@update');
+
+  Route::get('pdf', 'ProductsController@pdf');
 });

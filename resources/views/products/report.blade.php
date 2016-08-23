@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>Produtos</h1>
-
+<hr>
 <table class="table table-striped table-hover">
   <thead>
     <th>Nome</th>
@@ -30,6 +30,8 @@
     @endforeach
   </tbody>
 </table>
+
+<a href="pdf" class="btn btn-danger"><i class="fa fa-file-pdf-o fa-2x"></i></a>
 
 <img src="/img/bottini.jpg" />
 @stop
