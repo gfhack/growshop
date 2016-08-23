@@ -8,7 +8,7 @@ Laravel is a web application framework with expressive, elegant syntax.
 ## Todo List
 - Framework [finished]
 - CRUD Product [finishing]
-- Export report to PDF [unfinished]
+- Export report to PDF [finished]
 - User Auth [finished]
 - Validations [unfinished]
 - Asynchronous search [finished]
