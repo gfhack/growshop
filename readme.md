@@ -14,7 +14,7 @@ Laravel is a web application framework with expressive, elegant syntax.
 - Asynchronous search [finished]
 - PostgreSQL [finished]
 - TDD [unfinished]
-- Boostrap [finished]
+- Bootstrap [finished]
 
 ## License
 
